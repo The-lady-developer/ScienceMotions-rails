@@ -15,6 +15,7 @@
   <%= @completed_lesson.completed %>
 </p>
 
+<%= show_if_completed_lesson_id_is_31 %>
 
 <%= link_to 'Edit', edit_completed_lesson_path(@completed_lesson) %> |
 <%= link_to 'Back', completed_lessons_path %>
