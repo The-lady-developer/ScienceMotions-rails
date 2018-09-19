@@ -21,9 +21,8 @@
 </p>
 
 <%= react_component(@lesson.name, prerender: false) %>
-
-<%= show_if_completed_lesson_id_is_completed %>
 <%= is_lesson_already_in_completed_lessons %>
+
 
 <%= render :partial => 'completed_lessons/form' %>
 
