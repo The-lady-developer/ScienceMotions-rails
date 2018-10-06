@@ -22,7 +22,7 @@
 
 <%= react_component(@lesson.name, prerender: false) %>
 <%= is_lesson_already_in_completed_lessons %>
-
+<%= print_all_completed_lessons %>
 
 <%= render :partial => 'completed_lessons/form' %>
 

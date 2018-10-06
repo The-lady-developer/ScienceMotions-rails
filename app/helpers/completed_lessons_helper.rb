@@ -41,10 +41,15 @@ module CompletedLessonsHelper
     end
 
     def print_all_completed_lessons(completed_lessons = @completed_lessons)
-        puts "yes"
         puts completed_lessons.each
 
+        lesson_id = @lesson.id
+        puts "yes"
+        puts lesson_id
+
+
         @completed_lessons.each do |completed_lesson|
+            puts "yes"
             puts completed_lesson.lesson_id
             puts completed_lesson.user_id
             puts completed_lesson.completed
