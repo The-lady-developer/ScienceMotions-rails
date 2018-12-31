@@ -32,7 +32,8 @@
   <%= react_component(@lesson.name, prerender: false) %>
   
 <div class="footer-info">
-  <% if @completed %>
+
+  <% if @completed_lesson.completed == true && current_user.id == @completed_lesson.user_id %>
   <p>Lesson Complete <%= l(@completed.created_at, format: :short) %> </p>
   <% else %>
   <%= render :partial => 'completed_lessons/form' %>

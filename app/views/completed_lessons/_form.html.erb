@@ -15,9 +15,8 @@
   <%= form.hidden_field :user_id  %>
 
   <%= form.hidden_field :lesson_id  %>
-
-
   <div class="actions">
-    <%= form.submit %>
+    <%= check_box(:tag_id, :value => 5).submit %>
+    <!-- <%= form.submit %> -->
   </div>
 <% end %>

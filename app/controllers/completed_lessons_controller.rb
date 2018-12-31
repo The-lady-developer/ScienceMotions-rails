@@ -26,12 +26,9 @@ class CompletedLessonsController < ApplicationController
   # POST /completed_lessons
   # POST /completed_lessons.json
   def create
-
-
     @completed_lesson = CompletedLesson.new(completed_lesson_params)
     @completed_lesson.user = current_user
     @completed_lesson.completed = true
-
     respond_to do |format|
       if @completed_lesson.save
         format.html { redirect_to @completed_lesson, notice: 'Completed lesson was successfully created.' }
