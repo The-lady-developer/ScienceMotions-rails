@@ -1,14 +1,13 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import TubeOne from 'images/tube-1.png'
-import TubeTwo from 'images/tube-2.png'
-import TubeBright from 'images/tube-bright.gif'
-import FacesFast from 'images/faces-fast.gif'
+import PropTypes from "prop-types";
+import React from "react";
+import TubeOne from "images/tube-1.png";
+import TubeTwo from "images/tube-2.png";
+import TubeBright from "images/tube-bright.gif";
+import FacesFast from "images/faces-fast.gif";
 
 export default class About extends React.Component {
-
   static propTypes = {
-    name: PropTypes.string.isRequired, // this is passed from the Rails view
+    name: PropTypes.string.isRequired // this is passed from the Rails view
   };
 
   /**
@@ -22,51 +21,53 @@ export default class About extends React.Component {
     this.state = { name: this.props.name };
   }
 
-  updateName = (name) => {
+  updateName = name => {
     this.setState({ name });
   };
 
   render() {
     return (
-    <section className="container center-text">
-          <div className="row">
-               <div className="col-xs-6 col-md-3 portfolio-item">
-                    <img className="img-responsive" src={TubeOne} alt=""/>
-                </div>
-                <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
-                <img className="img-responsive" src={TubeTwo} alt=""/>
-            </div>
-            <div className="col-xs-6 col-md-3 portfolio-item">
-                <img className="img-responsive" src={FacesFast} alt=""/>
-            </div>
-            <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
-                <img className="img-responsive" src={TubeBright} alt=""/>
-                </div>
-            </div>
-            <div className="row">
-            <div className="col-lg-12">
-                <div className="header">
-                    <h1>ScienceMotions</h1>
-                    <p>Biology, chemistry and physics lessons from the future.</p>
-                    <p><a href="#">see more</a></p>
-                </div>
+      <section className="container center-text">
+        <div className="row">
+          <div className="col-xs-6 col-md-3 portfolio-item">
+            <img className="img-responsive" src={TubeOne} alt="" />
+          </div>
+          <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
+            <img className="img-responsive" src={TubeTwo} alt="" />
+          </div>
+          <div className="col-xs-6 col-md-3 portfolio-item">
+            <img className="img-responsive" src={FacesFast} alt="" />
+          </div>
+          <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
+            <img className="img-responsive" src={TubeBright} alt="" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="header">
+              <h1>ScienceMotions</h1>
+              <p>Biology, chemistry and physics lessons from the future.</p>
+              <p>
+                <a href="#">see more</a>
+              </p>
             </div>
           </div>
-          <div className="row">
-               <div className="col-xs-6 col-md-3 portfolio-item">
-                    <img className="img-responsive" src={FacesFast} alt=""/>
-                </div>
-                <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
-                    <img className="img-responsive" src={TubeTwo} alt=""/>
-                </div>
-                <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
-                    <img className="img-responsive" src={TubeOne} alt=""/>
-                </div>
-                <div className="col-xs-6 col-md-3 portfolio-item">
-                    <img className="img-responsive" src={TubeBright} alt=""/>
-                </div>
-            </div>
-        </section>
+        </div>
+        <div className="row">
+          <div className="col-xs-6 col-md-3 portfolio-item">
+            <img className="img-responsive" src={FacesFast} alt="" />
+          </div>
+          <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
+            <img className="img-responsive" src={TubeTwo} alt="" />
+          </div>
+          <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
+            <img className="img-responsive" src={TubeOne} alt="" />
+          </div>
+          <div className="col-xs-6 col-md-3 portfolio-item">
+            <img className="img-responsive" src={TubeBright} alt="" />
+          </div>
+        </div>
+      </section>
     );
   }
 }
